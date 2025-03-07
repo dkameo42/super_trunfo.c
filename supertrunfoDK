@@ -1,0 +1,87 @@
+#include <stdio.h>
+
+int main () {
+
+    char codigo1[3]; 
+    char codigo2[3]; 
+    char cidade1[50]; 
+    char cidade2[50]; 
+    char estado1[20]; 
+    char estado2[20];
+    int populacao1[20]; 
+    int populacao2[20]; 
+    int pontosTuristicos1[100]; 
+    int pontosTuristicos2[100];
+    float area1[20]; 
+    float area2[20]; 
+    float pib1[20]; 
+    float pib2[20];
+  
+
+    printf("Digite o nome do Estado 1: \n ");
+    scanf("%s", &estado1[20]);
+    
+    printf("Digite o código da carta 1 (ex: A01): \n ");
+    scanf("%c", &codigo1[3]);
+    
+    printf("Digite o nome da cidade 1: \n");
+    scanf("%c", &cidade1[50]);
+    
+    printf("Digite a população 1: \n");
+    scanf("%d", &populacao1[20]);
+    
+    printf("Digite a área 1 (km²): \n");
+    scanf("%f", &area1[20]);
+    
+    printf("Digite o PIB 1: \n");
+    scanf("%f", &pib1[20]);
+    
+    printf("Digite o número de pontos turísticos 1: \n");
+    scanf("%d", &pontosTuristicos1[100]);
+
+    printf("============================================= \n");
+  
+    printf("Digite o nome do Estado 2: \n ");
+    scanf("%s", &estado2[20]);
+    
+    printf("Digite o código da carta 2 (ex: B01): \n ");
+    scanf("%c", &codigo2[3]);
+    
+    printf("Digite o nome da cidade 2: \n");
+    scanf("%c[50]", &cidade2[50]);
+    
+    printf("Digite a população 2: \n");
+    scanf("%d", &populacao2[20]);
+    
+    printf("Digite a área 2 (km²): \n");
+    scanf("%f", &area2[20]);
+    
+    printf("Digite o PIB 1: \n");
+    scanf("%f", &pib2[20]);
+    
+    printf("Digite o número de pontos turísticos 2: \n");
+    scanf("%d", &pontosTuristicos2[100]);
+
+  printf("============================================= \n");
+
+    printf("Estado 1 é: %char\n", estado1[20]);
+    printf("Código da Carta 1 é: %3c\n", codigo1[3]);
+    printf("Nome da Cidade 1: %c\n", cidade1[50]);
+    printf("População 1 é: %d\n", populacao1[20]);
+    printf("Área 1 [km2] é: %.2f\n", area1[20]);
+    printf("PIB 1 é: %.2f\n", pib1[20]);
+    printf("Número de Pontos Turísticos 1 é: %d\n", pontosTuristicos1[100]);
+
+    printf("============================================= \n");
+
+    printf("Estado 2 é: %char\n", estado2[20]);
+    printf("Código da Carta 2 é: %char\n", codigo2[3]);
+    printf("Nome da Cidade 2 é: %char\n", cidade2[50]);
+    printf("População 2 é: %d\n", populacao2[20]);
+    printf("Área 2 é: %.2f km²\n", area2[20]);
+    printf("PIB 1 é: %.2f\n", pib2[20]);
+    printf("Número de Pontos Turísticos 2 é: %d\n", pontosTuristicos2[100]);
+
+  return 0;
+
+  }
